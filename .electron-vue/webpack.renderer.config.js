@@ -3,6 +3,7 @@
 process.env.BABEL_ENV = 'renderer'
 
 const path = require('path')
+// @ts-ignore
 const { dependencies } = require('../package.json')
 const webpack = require('webpack')
 
@@ -170,6 +171,7 @@ if (process.env.NODE_ENV === 'production') {
   rendererConfig.devtool = ''
 
   rendererConfig.plugins.push(
+    // @ts-ignore
     new BabiliWebpackPlugin(),
     new CopyWebpackPlugin([
       {

@@ -131,6 +131,7 @@ if (process.env.NODE_ENV === 'production') {
   webConfig.devtool = ''
 
   webConfig.plugins.push(
+    // @ts-ignore
     new BabiliWebpackPlugin(),
     new CopyWebpackPlugin([
       {

@@ -3,6 +3,7 @@
 process.env.BABEL_ENV = 'main'
 
 const path = require('path')
+ // @ts-ignore
 const { dependencies } = require('../package.json')
 const webpack = require('webpack')
 
@@ -73,6 +74,7 @@ if (process.env.NODE_ENV !== 'production') {
  */
 if (process.env.NODE_ENV === 'production') {
   mainConfig.plugins.push(
+    // @ts-ignore
     new BabiliWebpackPlugin(),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': '"production"'

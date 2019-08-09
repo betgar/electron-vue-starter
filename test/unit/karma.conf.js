@@ -42,6 +42,7 @@ module.exports = config => {
       ]
     },
     customLaunchers: {
+      // FIXME: karma-electron: `--show` is now deprecated. Please use `browserWindowOptions.show` instead
       'visibleElectron': {
         base: 'Electron',
         flags: ['--show']

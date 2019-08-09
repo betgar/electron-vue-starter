@@ -1,9 +1,9 @@
 {
-  "name": "ele-vue-ide",
+  "name": "electron-vue-starter",
   "version": "0.0.1",
   "author": "betgar <betgar@163.com>",
   "description": "An electron project powered by electron-vue",
-  "license": null,
+  "license": "MIT",
   "main": "./dist/electron/main.js",
   "scripts": {
     "build": "node .electron-vue/build.js && electron-builder",
@@ -21,9 +21,17 @@
     "unit": "karma start test/unit/karma.conf.js",
     "postinstall": "npm run lint:fix"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/betgar/electron-vue-starter"
+  },
+  "bugs": {
+    "url": "https://github.com/betgar/electron-vue-starter/issues",
+    "email": "betgar@163.com"
+  },
   "build": {
-    "productName": "ele-vue-ide",
-    "appId": "ide.zhunilink.com",
+    "productName": "electron-vue-starter",
+    "appId": "electron.vue.starter",
     "directories": {
       "output": "build"
     },

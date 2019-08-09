@@ -1,4 +1,4 @@
-# ele-vue-ide
+# electron-vue-starter
 
 > An electron project powered by electron-vue
 

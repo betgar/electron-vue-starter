@@ -25,6 +25,7 @@ function createWindow () {
     useContentSize: true,
     width: 1000,
     webPreferences: {
+      // electron v5.x 修改配置默认nodeIntegration: false
       // WARNNING: 当设置为false时不能在renderer进程使用require
       nodeIntegration: true
     }

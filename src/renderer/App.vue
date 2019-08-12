@@ -6,7 +6,7 @@
 
 <script>
   export default {
-    name: 'ele-vue-ide'
+    name: 'electron-vue-starter'
   }
 </script>
 
